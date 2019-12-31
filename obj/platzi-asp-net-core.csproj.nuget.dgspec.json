@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\IvanStankov\\Documents\\platzi\\asp.net_pagina_wb\\platzi-asp-net-core.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\IvanStankov\\Documents\\platzi\\asp.net_pagina_wb\\platzi-asp-net-core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\IvanStankov\\Documents\\platzi\\asp.net_pagina_wb\\platzi-asp-net-core.csproj",
+        "projectName": "platzi-asp-net-core",
+        "projectPath": "C:\\Users\\IvanStankov\\Documents\\platzi\\asp.net_pagina_wb\\platzi-asp-net-core.csproj",
+        "packagesPath": "C:\\Users\\IvanStankov\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\IvanStankov\\Documents\\platzi\\asp.net_pagina_wb\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\IvanStankov\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
