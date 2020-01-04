@@ -40,3 +40,6 @@ c:\Users\IvanStankov\Documents\platzi\asp.net_pagina_wb\obj\Debug\netcoreapp2.1\
 C:\Users\IvanStankov\Documents\platzi\asp.net_pagina_wb\obj\Debug\netcoreapp2.1\platzi-asp-net-core.csproj.CopyComplete
 c:\Users\IvanStankov\Documents\platzi\asp.net_pagina_wb\obj\Debug\netcoreapp2.1\Razor\Views\Curso\Index.g.cshtml.cs
 c:\Users\IvanStankov\Documents\platzi\asp.net_pagina_wb\obj\Debug\netcoreapp2.1\Razor\Views\Curso\MultiCurso.g.cshtml.cs
+
+c:\Users\IvanStankov\Documents\platzi\asp.net_pagina_wb\obj\Debug\netcoreapp2.1\Razor\Views\Curso\Create.g.cshtml.cs
+
