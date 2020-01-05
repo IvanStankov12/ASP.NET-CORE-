@@ -2877,6 +2877,11 @@
   "RootNamespace": "platzi-asp-net-core",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\IvanStankov\\Documents\\platzi\\asp.net_pagina_wb\\Views\\Curso\\Edit.cshtml",
+      "TargetPath": "Views\\Curso\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\IvanStankov\\Documents\\platzi\\asp.net_pagina_wb\\Views\\Asignatura\\MultiAsignatura.cshtml",
       "TargetPath": "Views\\Asignatura\\MultiAsignatura.cshtml",
       "FileKind": "mvc"
