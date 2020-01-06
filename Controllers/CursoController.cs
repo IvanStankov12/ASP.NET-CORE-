@@ -45,8 +45,8 @@ namespace platzi_asp_net_core.Controllers
             ViewBag.Fecha = DateTime.Now;
             if (ModelState.IsValid)
             {
-                var school = _context.Escuelas.FirstOrDefault();
-                curso.EscuelaId = school.Id;
+                var db = _context.Escuelas.FirstOrDefault();
+                curso.EscuelaId = db.Id;
                 _context.Cursos.Add(curso);
                 _context.SaveChanges();
                 ViewBag.MensajeExtra = "Vista Creada";
@@ -60,36 +60,46 @@ namespace platzi_asp_net_core.Controllers
             }
         }
 
-        public IActionResult Edit(int Id)
+        public IActionResult Edit(string Id)
         {
             ViewBag.Fecha = DateTime.Now;
             Curso model = new Curso();
-            
-            var db = _context.Cursos.Find(Id);
-            model.Nombre = db.Nombre;
-            model.Id = db.Id;
+            using (var db = _context)
+            {
+                var dataCurso = db.Cursos.Find(Id);
+                model.Nombre = dataCurso.Nombre;
+                model.Dirección = dataCurso.Dirección;
+                model.Jornada = dataCurso.Jornada;
+                model.Id = dataCurso.Id;
+            }
 
             return View(model);
         }
         [HttpPost]
-        public IActionResult Edit(Curso curso)
+        public IActionResult Edit(Curso model)
         {
             ViewBag.Fecha = DateTime.Now;
             if (ModelState.IsValid)
             {
-                var school = _context.Escuelas.Find(curso.Id);
-                curso.EscuelaId = school.Id;
-                _context.Cursos.Add(curso);
-                _context.SaveChanges();
-                ViewBag.MensajeExtra = "Vista Creada";
-
-                return View("Index", curso);
+                return View(model);
 
             }
-            else
+            using (var db = _context)
             {
-                return View(curso);
+                var dataCurso = db.Cursos.Find(model);
+                model.Nombre = dataCurso.Nombre;
+                model.Dirección = dataCurso.Dirección;
+                model.Jornada = dataCurso.Jornada;
+                model.Id = dataCurso.Id;
+
+                db.Cursos.Add(dataCurso);
+                db.SaveChanges();
             }
+            
+
+            return Redirect(Url.Content("//localhost:5001/Curso"));
+
+
         }
 
 

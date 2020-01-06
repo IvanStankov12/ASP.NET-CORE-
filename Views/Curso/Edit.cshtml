@@ -10,6 +10,7 @@
 
 <div asp-validation-summary="All"></div>
 <form method="POST">
+   
     <div>
         <label asp-for="Nombre"></label>
         <input asp-for="Nombre"/>
@@ -26,7 +27,7 @@
             new {@class = "form-control"}
         )
     </div>
-    <input type="submit" class="btn btn-sucecess" value="Guardar" />
+    <input onclick= "document.location.href= '//localhost:5001/Curso'" type="submit" class="btn btn-sucecess" value="Guardar" />
 
 
 </form>
