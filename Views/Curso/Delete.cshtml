@@ -1,0 +1,28 @@
+﻿@model Curso
+
+
+@{
+    ViewData["Title"] = "Borrar datos de curso";
+    Layout = "Simple";
+}
+
+<h1>@ViewData["Title"]</h1>
+<h2>@ViewBag.MensajeExtra</h2>
+
+<form method="POST">
+   
+    <strong>¿ Estas seguro en borrar los datos de este curso ?</strong>
+    <div></div>
+<p>
+    <strong>Nombre del curso:</strong> @Model.Nombre <br/>
+    <strong>Dirección:</strong> @Model.Dirección<br/>
+    <strong>Jornada:</strong>  @Model.Jornada <br/>
+    <strong>Id :</strong> @Model.Id
+</p>
+
+<input onclick= "document.location.href= '//localhost:5001/Curso'" type="submit" class="btn btn-sucecess" value="Borrar" />
+
+</form>
+
+
+<p><i>@ViewBag.Fecha</i></p>

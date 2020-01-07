@@ -74,7 +74,7 @@ Write(ViewData["Title"]);
             WriteLiteral("</h1>\n\n<strong>Desde la vista parcial</strong>\n");
             EndContext();
             BeginContext(172, 36, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "a99c15deab8e43cb8b0bc14a5d6b2bfb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0cba788846a14af7884c1f88134aa1f3", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();

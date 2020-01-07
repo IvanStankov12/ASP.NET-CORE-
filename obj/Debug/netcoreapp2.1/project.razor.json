@@ -2927,6 +2927,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\IvanStankov\\Documents\\platzi\\asp.net_pagina_wb\\Views\\Curso\\Delete.cshtml",
+      "TargetPath": "Views\\Curso\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\IvanStankov\\Documents\\platzi\\asp.net_pagina_wb\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"

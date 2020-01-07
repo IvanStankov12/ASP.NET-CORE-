@@ -3,6 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using platzi_asp_net_core.Models;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace platzi_asp_net_core.Controllers
@@ -79,28 +80,70 @@ namespace platzi_asp_net_core.Controllers
         public IActionResult Edit(Curso model)
         {
             ViewBag.Fecha = DateTime.Now;
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return View(model);
 
             }
             using (var db = _context)
             {
-                var dataCurso = db.Cursos.Find(model);
-                model.Nombre = dataCurso.Nombre;
-                model.Dirección = dataCurso.Dirección;
-                model.Jornada = dataCurso.Jornada;
-                model.Id = dataCurso.Id;
+                var dataCurso = db.Cursos.Find(model.Id);
+                dataCurso.Nombre = model.Nombre;
+                dataCurso.Dirección = model.Dirección;
+                dataCurso.Jornada = model.Jornada;
+                dataCurso.Id = model.Id;
 
-                db.Cursos.Add(dataCurso);
+                db.Cursos.Attach(dataCurso);
+                db.Entry(dataCurso).State = EntityState.Modified;
                 db.SaveChanges();
             }
-            
+
 
             return Redirect(Url.Content("//localhost:5001/Curso"));
 
 
         }
+
+        public IActionResult Delete(string Id)
+        {
+
+            ViewBag.Fecha = DateTime.Now;
+            ViewBag.MensajeExtra = "Todo se logra";
+            Curso model = new Curso();
+            using (var db = _context)
+            {
+                var dataCurso = db.Cursos.Find(Id);
+                model.Nombre = dataCurso.Nombre;
+                model.Dirección = dataCurso.Dirección;
+                model.Jornada = dataCurso.Jornada;
+                model.Id = dataCurso.Id;
+            }
+
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(Curso model)
+        {
+            ViewBag.Fecha = DateTime.Now;
+             
+            using (var db = _context)
+            {
+                var dataCurso = (from cur in db.Cursos
+                                  where cur.Id == model.Id
+                                   select cur).Single();
+                
+                db.Cursos.Remove(dataCurso);
+                db.SaveChanges();
+            }
+
+
+            return Redirect(Url.Content("//localhost:5001/Curso"));
+
+
+        }
+
 
 
         private EscuelaContext _context;
