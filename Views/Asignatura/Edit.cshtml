@@ -1,0 +1,24 @@
+﻿@model Asignatura
+
+@{
+    ViewData["Title"] = "Edición de las Asignaturas";
+    Layout = "Simple";
+}
+
+<h1>@ViewData["Title"]</h1>
+<h2>@ViewBag.MensajeExtra</h2>
+
+<div asp-validation-summary="All"></div>
+<form method="POST">
+   
+    <div>
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre"/>
+    </div>
+    <input onclick= "document.location.href= '//localhost:5001/Asignatura/MultiAsignatura'" type="submit" class="btn btn-sucecess" value="Guardar" />
+
+
+</form>
+
+
+<p><i>@ViewBag.Fecha</i></p>

@@ -54,7 +54,7 @@ using platzi_asp_net_core.Models;
             WriteLiteral("<!DOCTYPE html>\n<html>\n");
             EndContext();
             BeginContext(23, 365, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "efddf4ef4e5649e58d1ab82c88b719cb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "54881358946e474a90f71f494cd75a08", async() => {
                 BeginContext(29, 352, true);
                 WriteLiteral(@"
     <meta charset=""utf-8"" />
@@ -81,7 +81,7 @@ using platzi_asp_net_core.Models;
             WriteLiteral("\n");
             EndContext();
             BeginContext(389, 729, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "83cf0b15dd0e433fb127182e59df9a10", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "973a6ab102c9479fb06cc3e18cbd25b8", async() => {
                 BeginContext(395, 5, true);
                 WriteLiteral("\n    ");
                 EndContext();

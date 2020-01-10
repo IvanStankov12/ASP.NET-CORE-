@@ -13,9 +13,8 @@ namespace platzi_asp_net_core.Models
         public List<Alumno> Alumnos{ get; set; }
         public Escuela Escuela { get; set; }
         public string EscuelaId { get; set; }
-        
-
-        public string Dirección { get; set; }
+        public string Dirección {get; set;}
+      
 
     }
 }

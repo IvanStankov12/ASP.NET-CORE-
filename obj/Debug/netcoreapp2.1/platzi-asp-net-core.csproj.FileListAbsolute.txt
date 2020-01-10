@@ -43,3 +43,11 @@ c:\Users\IvanStankov\Documents\platzi\asp.net_pagina_wb\obj\Debug\netcoreapp2.1\
 c:\Users\IvanStankov\Documents\platzi\asp.net_pagina_wb\obj\Debug\netcoreapp2.1\Razor\Views\Curso\Create.g.cshtml.cs
 c:\Users\IvanStankov\Documents\platzi\asp.net_pagina_wb\obj\Debug\netcoreapp2.1\Razor\Views\Curso\Edit.g.cshtml.cs
 c:\Users\IvanStankov\Documents\platzi\asp.net_pagina_wb\obj\Debug\netcoreapp2.1\Razor\Views\Curso\Delete.g.cshtml.cs
+c:\Users\IvanStankov\Documents\platzi\asp.net_pagina_wb\obj\Debug\netcoreapp2.1\Razor\Views\Asignatura\Create.g.cshtml.cs
+c:\Users\IvanStankov\Documents\platzi\asp.net_pagina_wb\obj\Debug\netcoreapp2.1\Razor\Views\Asignatura\Delete.g.cshtml.cs
+c:\Users\IvanStankov\Documents\platzi\asp.net_pagina_wb\obj\Debug\netcoreapp2.1\Razor\Views\Asignatura\Edit.g.cshtml.cs
+c:\Users\IvanStankov\Documents\platzi\asp.net_pagina_wb\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ListaObjetoAsignatura.g.cshtml.cs
+c:\Users\IvanStankov\Documents\platzi\asp.net_pagina_wb\obj\Debug\netcoreapp2.1\Razor\Views\Alumno\Create.g.cshtml.cs
+c:\Users\IvanStankov\Documents\platzi\asp.net_pagina_wb\obj\Debug\netcoreapp2.1\Razor\Views\Alumno\Delete.g.cshtml.cs
+c:\Users\IvanStankov\Documents\platzi\asp.net_pagina_wb\obj\Debug\netcoreapp2.1\Razor\Views\Alumno\Edit.g.cshtml.cs
+c:\Users\IvanStankov\Documents\platzi\asp.net_pagina_wb\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ListaObjetoAlumno.g.cshtml.cs
